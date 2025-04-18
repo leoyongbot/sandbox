@@ -21,6 +21,11 @@ jobs:
       - name: install requirements
         run: sudo apt-get install -y doxygen graphviz
 
+      - name: Set Git user info
+        run: |
+          git config --global user.name "Leo"
+          git config --global user.email "yong.cherngliin@emagegroup.com"
+
       - uses: langroodi/doxygenize@v1
         with:
           darkmode: true
