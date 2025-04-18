@@ -23,7 +23,14 @@ jobs:
 
       - name: run doxygen
         run: doxygen Doxyfile
-        
+      
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages         # The branch to deploy to
+          folder: html             # The folder containing your static site (Doxygen output)
+          clean: true              # Optional: remove previous files
+
       - name: Copy HTML output to docs folder (not committed)
         run: |
           mkdir -p ./docs/html
