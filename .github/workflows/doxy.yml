@@ -24,3 +24,4 @@ jobs:
       - uses: langroodi/doxygenize@v1
         with:
           darkmode: true
+          ghpagesbranch: main
