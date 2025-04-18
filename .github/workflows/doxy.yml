@@ -25,7 +25,7 @@ jobs:
         run: |
           git config --global user.name "Leo"
           git config --global user.email "yong.cherngliin@emagegroup.com"
-
+          git remote set-url origin https://leoyongbot:abcd12AB@@github.com/leoyongbot/sandbox.git
       - uses: langroodi/doxygenize@v1
         with:
           darkmode: true
