@@ -34,13 +34,12 @@ jobs:
       - name: Commit and push updated docs
         run: |
           git config --global user.name "leoyongbot"
-          git config --global user.email "yong.cherngliin@emagegroup.com"
-          git remote set-url origin leoyongbot:${{ secrets.GITHUB_TOKEN }}@github.com/leoyongbot/sandbox.git
-
+          git config --global user.email "leoyongbot@users.noreply.github.com"
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
           git checkout main
           git add docs
           git commit -m "Update docs [skip ci]" || echo "No changes to commit"
-          git push origin main
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          git push
+
+  
         
