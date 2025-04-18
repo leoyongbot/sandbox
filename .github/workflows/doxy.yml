@@ -26,9 +26,8 @@ jobs:
         
       - name: Copy HTML output to docs folder (not committed)
         run: |
-          rm -rf ./docs
-          mkdir -p ./docs
-          cp -r ./html/* ./docs/
+          mkdir -r ./docs/html
+          cp -r ./html/* ./docs/html
           rm -rf ./html
 
       - name: Commit and push updated docs
