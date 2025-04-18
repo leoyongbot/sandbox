@@ -35,7 +35,7 @@ jobs:
         run: |
           git config --global user.name "leoyongbot"
           git config --global user.email "yong.cherngliin@emagegroup.com"
-          git remote set-url origin https://github.com/leoyongbot/sandbox.git
+          git remote set-url origin leoyongbot:${{ secrets.GITHUB_TOKEN }}@github.com/leoyongbot/sandbox.git
 
           git checkout main
           git add docs
