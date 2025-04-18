@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>tomo_computation</name>
+  <version>1.0.0</version>
+  <description>A library for tomo computation</description>
+  <maintainer email="yong.cherngliin@emagegroup.com">leo</maintainer>
+  <license>Apache-2.0</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <build_depend>ament_cmake</build_depend>
+  <exec_depend>ament_cmake</exec_depend>
+
+  <depend>std_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>moveit_msgs</depend>
+  <depend>tf2</depend>
+
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
