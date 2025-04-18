@@ -23,13 +23,12 @@ jobs:
 
       - name: run doxygen
         run: doxygen Doxyfile
-      
-      - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@v4
+
+      - name: Upload Doxygen Docs as Artifact
+        uses: actions/upload-artifact@v3
         with:
-          branch: gh-pages         # The branch to deploy to
-          folder: html             # The folder containing your static site (Doxygen output)
-          clean: true              # Optional: remove previous files
+          name: doxygen-docs
+          path: html/
 
       - name: Copy HTML output to docs folder (not committed)
         run: |
