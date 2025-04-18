@@ -1,0 +1,7 @@
+<map id="tomo::poseQuatToVec" name="tomo::poseQuatToVec">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,168,56"/>
+<area shape="rect" id="Node000002" href="$namespacetomo.html#adf7515f2788a2e8813ae72ca63e6d2dc" title=" " alt="" coords="216,5,348,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="168,30,202,26,203,31,168,35"/>
+<area shape="rect" id="Node000003" href="$namespacetomo.html#a37e4536367315a3cb08304acb3ee3209" title=" " alt="" coords="217,55,347,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="168,51,203,55,203,60,168,56"/>
+</map>

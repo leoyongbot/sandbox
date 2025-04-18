@@ -1,0 +1,7 @@
+<map id="tomo::poseToVec" name="tomo::poseToVec">
+<area shape="rect" id="Node000001" title=" " alt="" coords="453,5,585,31"/>
+<area shape="rect" id="Node000002" href="$namespacetomo.html#ab3a4c1791b8b876b6bc95c2e47c9a5f8" title=" " alt="" coords="243,5,405,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="440,21,406,21,406,15,440,15"/>
+<area shape="rect" id="Node000003" href="$structtomo_1_1PoseBase.html#a9953360e35fd23db49b7785e04e86e77" title=" " alt="" coords="5,5,195,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="229,21,195,21,195,15,229,15"/>
+</map>
