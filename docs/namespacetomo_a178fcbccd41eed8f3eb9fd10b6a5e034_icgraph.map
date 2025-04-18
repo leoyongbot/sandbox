@@ -1,7 +1,0 @@
-<map id="tomo::poseQuatToPoseMsgs" name="tomo::poseQuatToPoseMsgs">
-<area shape="rect" id="Node000001" title=" " alt="" coords="267,31,472,56"/>
-<area shape="rect" id="Node000002" href="$namespacetomo.html#a6742d644c805ff00cff2b558cd4ec244" title=" " alt="" coords="8,5,216,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="253,35,216,31,216,26,254,29"/>
-<area shape="rect" id="Node000003" href="$structtomo_1_1PoseBase.html#a5047cbfcd700c3999c1f0650f973c5f0" title=" " alt="" coords="5,55,219,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="254,57,219,60,219,55,253,51"/>
-</map>

@@ -1,8 +1,0 @@
-<map id="tomo::TomoJoint::offset" name="tomo::TomoJoint::offset">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,179,56"/>
-<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="57,32,50,22,53,12,68,6,92,4,122,8,133,17,130,21,120,13,92,9,69,11,57,16,55,22,61,29"/>
-<area shape="rect" id="Node000002" href="$namespacetomo.html#a3b139dd6eff2fa532caa55429a92ce32" title=" " alt="" coords="227,5,387,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="179,30,213,26,214,32,179,36"/>
-<area shape="rect" id="Node000003" href="$namespacetomo.html#a5d5702683e6fa2e8377be2bb7a1af7c8" title=" " alt="" coords="227,55,387,80"/>
-<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="179,50,214,54,213,60,179,56"/>
-</map>

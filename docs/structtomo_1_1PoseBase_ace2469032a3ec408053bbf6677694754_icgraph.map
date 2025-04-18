@@ -1,7 +1,0 @@
-<map id="tomo::PoseBase::reset" name="tomo::PoseBase::reset">
-<area shape="rect" id="Node000001" title=" " alt="" coords="257,31,425,56"/>
-<area shape="rect" id="Node000002" href="$structtomo_1_1TomoPose.html#a4e5950973b792b7417da1f6668c3d8cc" title=" " alt="" coords="5,5,209,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="243,35,209,32,210,26,244,30"/>
-<area shape="rect" id="Node000003" href="$structtomo_1_1TomoPose.html#a3b399802c05ac0c4090b4c2c121eb30d" title=" " alt="" coords="5,55,209,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="244,56,210,60,209,54,243,51"/>
-</map>

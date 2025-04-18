@@ -1,9 +1,0 @@
-<map id="tomo::getAbsolutePose" name="tomo::getAbsolutePose">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,42,179,67"/>
-<area shape="rect" id="Node000002" href="$namespacetomo.html#a7fc4f1bd9a2a5405f2e54cc483c33576" title=" " alt="" coords="239,5,436,45"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="179,42,225,36,225,41,179,47"/>
-<area shape="rect" id="Node000004" href="$namespacetomo.html#a6a809eeae0ae39635938870d07387a08" title=" " alt="" coords="227,70,448,95"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="179,62,213,66,213,71,179,67"/>
-<area shape="rect" id="Node000003" href="$namespacetomo.html#ae0db8204df050fd9bd1c618cefb3a7c9" title=" " alt="" coords="496,13,715,38"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="436,23,482,23,482,28,436,28"/>
-</map>

@@ -1,7 +1,0 @@
-<map id="tomo::poseMsgsToTfTransform" name="tomo::poseMsgsToTfTransform">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,227,56"/>
-<area shape="rect" id="Node000002" href="$namespacetomo.html#a6f2169bb034db7b6cd5e8c2895896c81" title=" " alt="" coords="281,5,490,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="227,30,266,26,267,32,227,36"/>
-<area shape="rect" id="Node000003" href="$namespacetomo.html#a6a809eeae0ae39635938870d07387a08" title=" " alt="" coords="275,55,496,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="227,51,261,54,261,59,227,56"/>
-</map>
