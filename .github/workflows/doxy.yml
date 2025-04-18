@@ -28,5 +28,6 @@ jobs:
         run: |
           rm -rf ./docs
           mkdir -p ./docs
-          cp -r ./doc/html/* ./docs/
+          cp -r ./html/* ./docs/
+          rm -rf ./html
         
