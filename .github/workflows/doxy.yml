@@ -27,7 +27,7 @@ jobs:
       - name: Upload Doxygen Docs as Artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          name: doxygen-docs
+          name: code-documentation
           path: html/
 
       - name: Copy HTML output to docs folder (not committed)
