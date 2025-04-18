@@ -1,0 +1,9 @@
+<map id="tomo::convertPoseInCamCoordinateToBase" name="tomo::convertPoseInCamCoordinateToBase">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,35,263,75"/>
+<area shape="rect" id="Node000002" href="$namespacetomo.html#a7fc4f1bd9a2a5405f2e54cc483c33576" title=" " alt="" coords="323,5,520,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="262,39,309,34,310,39,263,44"/>
+<area shape="rect" id="Node000004" href="$namespacetomo.html#a6a809eeae0ae39635938870d07387a08" title=" " alt="" coords="311,70,532,95"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="263,65,298,68,297,73,262,70"/>
+<area shape="rect" id="Node000003" href="$namespacetomo.html#ae0db8204df050fd9bd1c618cefb3a7c9" title=" " alt="" coords="580,13,799,38"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="520,23,566,23,566,28,520,28"/>
+</map>

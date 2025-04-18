@@ -1,0 +1,13 @@
+<map id="tomo::getAbsolutePose" name="tomo::getAbsolutePose">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,66,179,91"/>
+<area shape="rect" id="Node000002" href="$namespacetomo.html#a020b5a64d50a8834f238bf7c357bf579" title=" " alt="" coords="245,41,418,66"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="178,67,230,61,231,67,179,72"/>
+<area shape="rect" id="Node000006" href="$namespacetomo.html#a6f2169bb034db7b6cd5e8c2895896c81" title=" " alt="" coords="227,90,436,115"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="179,85,213,88,213,93,179,90"/>
+<area shape="rect" id="Node000003" href="$namespacetomo.html#a7fc4f1bd9a2a5405f2e54cc483c33576" title=" " alt="" coords="496,5,693,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="418,42,482,35,483,40,418,47"/>
+<area shape="rect" id="Node000005" href="$namespacetomo.html#a6a809eeae0ae39635938870d07387a08" title=" " alt="" coords="484,70,705,95"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="418,60,470,66,470,71,418,66"/>
+<area shape="rect" id="Node000004" href="$namespacetomo.html#ae0db8204df050fd9bd1c618cefb3a7c9" title=" " alt="" coords="753,13,972,38"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="694,23,740,23,740,28,694,28"/>
+</map>

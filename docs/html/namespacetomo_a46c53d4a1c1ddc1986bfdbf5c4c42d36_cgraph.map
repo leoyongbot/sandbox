@@ -1,0 +1,9 @@
+<map id="tomo::getOffsetPose" name="tomo::getOffsetPose">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,42,160,67"/>
+<area shape="rect" id="Node000002" href="$namespacetomo.html#a7fc4f1bd9a2a5405f2e54cc483c33576" title=" " alt="" coords="220,5,417,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="160,42,206,37,207,42,161,48"/>
+<area shape="rect" id="Node000004" href="$namespacetomo.html#a6a809eeae0ae39635938870d07387a08" title=" " alt="" coords="208,70,429,95"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="161,61,198,66,198,71,160,66"/>
+<area shape="rect" id="Node000003" href="$namespacetomo.html#ae0db8204df050fd9bd1c618cefb3a7c9" title=" " alt="" coords="477,13,696,38"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="418,23,464,23,464,28,418,28"/>
+</map>
