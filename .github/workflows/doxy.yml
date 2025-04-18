@@ -26,7 +26,7 @@ jobs:
         
       - name: Copy HTML output to docs folder (not committed)
         run: |
-          mkdir -r ./docs/html
+          mkdir -p ./docs/html
           cp -r ./html/* ./docs/html
           rm -rf ./html
 
