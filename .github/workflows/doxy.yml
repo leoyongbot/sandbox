@@ -21,12 +21,12 @@ jobs:
       - name: install requirements
         run: sudo apt-get install -y doxygen graphviz
 
-      - name: Set Git user info
+      - name: run doxygen
+        run: doxygen Doxyfile
+        
+      - name: Copy HTML output to docs folder (not committed)
         run: |
-          git config --global user.name "Leo"
-          git config --global user.email "yong.cherngliin@emagegroup.com"
-          git remote set-url origin https://leoyongbot:abcd12AB@@github.com/leoyongbot/sandbox.git
-      - uses: langroodi/doxygenize@v1
-        with:
-          darkmode: true
-          ghpagesbranch: main
+          rm -rf ./docs
+          mkdir -p ./docs
+          cp -r ./doc/html/* ./docs/
+        
