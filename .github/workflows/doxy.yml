@@ -41,7 +41,7 @@ jobs:
           NEW_LINE="[Download latest Doxygen docs](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }})"
       
           # Remove the line that contains the placeholder and add the new one
-          grep -v '\[Download latest Doxygen docs\]' README.md > README.tmp
+          grep -v '[Download latest Doxygen docs]' README.md > README.tmp
           echo "$NEW_LINE" >> README.tmp
           mv README.tmp README.md
     
