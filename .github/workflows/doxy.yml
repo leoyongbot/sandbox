@@ -34,27 +34,32 @@ jobs:
         run: |
           echo "🔗 Download the Doxygen docs from:"
           echo "https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"
-      - name: Update README with artifact link
+          
+      - name: Replace specific line in README.md
         run: |
-          sed -i '/\[Download latest Doxygen docs\]/d' README.md
-          echo "[Download latest Doxygen docs](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }})" >> README.md
-
-
+          # Define the new line
+          NEW_LINE="[Download latest Doxygen docs](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }})"
+      
+          # Remove the line that contains the placeholder and add the new one
+          grep -v '\[Download latest Doxygen docs\]' README.md > README.tmp
+          echo "$NEW_LINE" >> README.tmp
+          mv README.tmp README.md
+    
       # - name: Copy HTML output to docs folder (not committed)
       #   run: |
       #     mkdir -p ./docs/html
       #     cp -r ./html/* ./docs/html
       #     rm -rf ./html
 
-      # - name: Commit and push updated docs
-      #   run: |
-      #     git config --global user.name "leoyongbot"
-      #     git config --global user.email "leoyongbot@users.noreply.github.com"
-      #     git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
-      #     git checkout main
-      #     git add docs
-      #     git commit -m "Update docs [skip ci]" || echo "No changes to commit"
-      #     git push
+      - name: Commit and push updated docs
+        run: |
+          git config --global user.name "leoyongbot"
+          git config --global user.email "leoyongbot@users.noreply.github.com"
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
+          git checkout main
+          git add docs
+          git commit -m "Update docs" || echo "No changes to commit"
+          git push
 
   
         
