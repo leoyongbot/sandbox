@@ -38,7 +38,7 @@ jobs:
       - name: Replace specific line in README.md
         run: |
           # Define the new line
-          awk '{ if($0 ~ /\[🔗 Download the Doxygen docs]/) print "[🔗 Download the Doxygen docs](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }})"; else print $0 }' README.md > README.tmp
+          awk '{ if($0 ~ /\[🔗 Download the Doxygen docs]/) print "[🔗 Download the Doxygen docs](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}/artifacts/${{ steps.upload.outputs.artifact_id }})"; else print $0 }' README.md > README.tmp
           mv README.tmp README.md
 
       - name: Commit and push updated docs
