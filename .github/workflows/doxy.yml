@@ -19,7 +19,25 @@ jobs:
       - uses: actions/checkout@v1
 
       - name: install requirements
-        run: sudo apt-get install -y doxygen graphviz
+        run: sudo apt-get install -y doxygen graphviz jq
+
+      - name: Delete old artifact with same name
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ARTIFACT_NAME: code-documentation
+        run: |
+          artifacts=$(curl -s -H "Authorization: token $GITHUB_TOKEN" \
+            https://api.github.com/repos/${{ github.repository }}/actions/artifacts)
+
+          artifact_id=$(echo "$artifacts" | jq -r ".artifacts[] | select(.name==\"$ARTIFACT_NAME\") | .id")
+
+          if [ -n "$artifact_id" ]; then
+            echo "Deleting old artifact with ID: $artifact_id"
+            curl -X DELETE -H "Authorization: token $GITHUB_TOKEN" \
+              https://api.github.com/repos/${{ github.repository }}/actions/artifacts/$artifact_id
+          else
+            echo "No existing artifact named $ARTIFACT_NAME found."
+          fi
 
       - name: run doxygen
         run: doxygen Doxyfile
@@ -30,21 +48,21 @@ jobs:
           name: code-documentation
           path: html/
 
-      - name: Copy HTML output to docs folder (not committed)
-        run: |
-          mkdir -p ./docs/html
-          cp -r ./html/* ./docs/html
-          rm -rf ./html
+      # - name: Copy HTML output to docs folder (not committed)
+      #   run: |
+      #     mkdir -p ./docs/html
+      #     cp -r ./html/* ./docs/html
+      #     rm -rf ./html
 
-      - name: Commit and push updated docs
-        run: |
-          git config --global user.name "leoyongbot"
-          git config --global user.email "leoyongbot@users.noreply.github.com"
-          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
-          git checkout main
-          git add docs
-          git commit -m "Update docs [skip ci]" || echo "No changes to commit"
-          git push
+      # - name: Commit and push updated docs
+      #   run: |
+      #     git config --global user.name "leoyongbot"
+      #     git config --global user.email "leoyongbot@users.noreply.github.com"
+      #     git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
+      #     git checkout main
+      #     git add docs
+      #     git commit -m "Update docs [skip ci]" || echo "No changes to commit"
+      #     git push
 
   
         
