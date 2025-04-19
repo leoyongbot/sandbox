@@ -39,12 +39,7 @@ jobs:
         run: |
           # Define the new line
           NEW_LINE="[🔗 Download the Doxygen docs](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }})"
-          awk '{ 
-            if ($0 ~ /\[🔗 Download the Doxygen docs\]/) 
-              print NEW_LINE; 
-            else 
-              print $0 
-          }' README.md > README.tmp
+          awk '{ if($0 ~ /\[🔗 Download the Doxygen docs]/) print NEW_LINE; else print $0 }' README.md > README.tmp
           mv README.tmp README.md
 
     
