@@ -30,10 +30,16 @@ jobs:
           name: code-documentation
           path: html/
 
-      - name: Echo artifact download info
+      - name: Get Artifact ID via GitHub API
+        id: get_artifact_id
         run: |
-          echo "🔗 Download the Doxygen docs from:"
-          echo "https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+          ARTIFACT_NAME="code-documentation"
+          ARTIFACT_ID=$(curl -s -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+            https://api.github.com/repos/${{ github.repository }}/actions/runs/${{ github.run_id }}/artifacts \
+            | jq ".artifacts[] | select(.name==\"$ARTIFACT_NAME\") | .id")
+      
+          echo "Artifact ID: $ARTIFACT_ID"
+          echo "artifact_id=$ARTIFACT_ID" >> $GITHUB_OUTPUT
           
       - name: Replace specific line in README.md
         run: |
